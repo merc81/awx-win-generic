@@ -1,0 +1,11 @@
+---
+
+- name: test Firefox and Putty
+  hosts: all
+  tasks:
+    - name: Install Firefox and Putty
+      win_chocolatey:
+       name:
+       - firefox
+       - putty
+       state: present 
